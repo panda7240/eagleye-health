@@ -1,0 +1,6 @@
+/app/vendors
+bin/*
+.idea/
+.gdb_history
+*.log
+*.iml
