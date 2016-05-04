@@ -8,7 +8,7 @@ import (
 	"os"
 	"os/exec"
 	"encoding/json"
-	"eagleye-health/config"
+	"github.com/siye1982/eagleye-health/config"
 
 	"strconv"
 )
