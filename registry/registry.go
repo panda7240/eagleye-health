@@ -143,18 +143,20 @@ func init() {
 
 
 
-	go func() {
-		for {
-			//60秒对tpm进行一次清零
-			time.Sleep(60 * time.Second)
-			tpm = 0
-		}
-	}()
+	//go func() {
+	//	for {
+	//
+	//		time.Sleep(60 * time.Second)
+	//		tpm = 0
+	//	}
+	//}()
 
 	go func() {
 		for {
 
 			Regist(assemble_health_info())
+			//60秒对tpm进行一次清零
+			tpm = 0
 			// 每隔60秒上传一次心跳信息
 			time.Sleep(60 * time.Second)
 

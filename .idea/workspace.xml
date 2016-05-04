@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccf3ab32-0cc0-4427-b723-6a349c3834d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__eagleye_health_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__eagleye_health_.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/registry.go" afterPath="$PROJECT_DIR$/registry/registry.go" />
     </list>
@@ -41,9 +40,11 @@
       <file leaf-file-name="registry.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/registry/registry.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="750">
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+              <folding>
+                <element signature="e#18#160#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,6 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,8 +199,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -572,6 +573,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../github.com/coreos/etcd/client/keys.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="79" column="19" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -610,7 +619,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="e#18#160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -676,7 +687,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#18#160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -684,7 +697,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#18#160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -692,7 +707,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#18#160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -852,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="170" column="11" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,9 +932,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/registry/registry.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="750">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="e#18#160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
