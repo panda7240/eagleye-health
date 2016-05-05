@@ -1,8 +1,8 @@
 package main
 
 import (
-	"eagleye-health/config"
-	"eagleye-health/registry"
+	"github.com/siye1982/eagleye-health/config"
+	"github.com/siye1982/eagleye-health/registry"
 	"time"
 )
 

@@ -1,7 +1,7 @@
 package registry
 
 import (
-	"fmt"
+	"log"
 	"runtime"
 	"sync/atomic"
 	"time"
@@ -60,7 +60,7 @@ func assemble_health_info() Heartbeat{
 
 	_, err := json.Marshal(heartbeat)
 	if err != nil {
-		fmt.Println("json err:", err)
+		log.Println("json err:", err)
 	}
 	return heartbeat
 
@@ -73,9 +73,9 @@ func Regist(heartbeat Heartbeat) {
 	key := heartbeat.Host + "," + strconv.Itoa(heartbeat.Pid)
 	value, err := json.Marshal(heartbeat)
 	if err != nil {
-		fmt.Println("json err:", err)
+		log.Println("json err:", err)
 	}
-	fmt.Println("upload heartbeat : " + key + "   " + string(value))
+	log.Println("upload heartbeat : " + key + "   " + string(value))
 	config.SetHeartbeatDataToEtcd(key, string(value))
 }
 
@@ -153,12 +153,13 @@ func init() {
 
 	go func() {
 		for {
+			// 每隔60秒上传一次心跳信息
+			time.Sleep(60 * time.Second)
 
 			Regist(assemble_health_info())
 			//60秒对tpm进行一次清零
 			tpm = 0
-			// 每隔60秒上传一次心跳信息
-			time.Sleep(60 * time.Second)
+
 
 		}
 	}()

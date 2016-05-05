@@ -99,12 +99,12 @@ func SetHeartbeatDataToEtcd(key string, value string){
 
 	keyPath :=  EAGLEHE_HEALTH_PATH + "/" + GroupName + "/" + key
 
-	resp, err := kapi.Set(context.Background(), keyPath, value, setOptions)
+	_, err := kapi.Set(context.Background(), keyPath, value, setOptions)
 	if err != nil {
 		log.Fatal(err)
 	} else {
 		// print common key info
-		log.Printf("Set is done. Metadata is %q\n", resp)
+		//log.Printf("Set is done. Metadata is %q\n", resp)
 	}
 
 }
