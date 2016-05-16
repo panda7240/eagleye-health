@@ -12,6 +12,7 @@ func main() {
 	config.GroupName = "packet"
 	config.HeartbeatConfig = `{"sss":"aabbcc"}`
 	config.InitEtcdClient()
+	registry.Start()
 	time.Sleep(1 * time.Second)
 
 	// 独立线程模拟计数
