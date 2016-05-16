@@ -11,6 +11,7 @@ import (
 	"github.com/siye1982/eagleye-health/config"
 
 	"strconv"
+	"fmt"
 )
 
 const(
@@ -159,6 +160,7 @@ func init() {
 启动入口
  */
 func Start(){
+	fmt.Println("======== 启动健康数据上报 =========")
 	go func() {
 		for {
 			// 每隔60秒上传一次心跳信息
