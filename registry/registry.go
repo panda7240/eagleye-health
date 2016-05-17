@@ -169,8 +169,6 @@ func Start(){
 			Regist(assemble_health_info())
 			//60秒对tpm进行一次清零
 			tpm = 0
-
-
 		}
 	}()
 }

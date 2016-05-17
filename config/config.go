@@ -7,6 +7,7 @@ import(
 	"github.com/coreos/etcd/client"
 	//"strings"
 	"strings"
+	"fmt"
 )
 
 const EAGLEHE_HEALTH_PATH = "/eagleye/health"
@@ -24,6 +25,12 @@ func InitEtcdClient() {
 	//flag.StringVar(&GroupName, "groupName", "", "Please input group name, eg: packetbeats")
 	//
 	//flag.Parse()
+
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Init Etcd Client . Recovering, but please report this: [", r, "]")
+		}
+	}()
 
 	log.Println("init config")
 
@@ -91,6 +98,12 @@ func createGroupDir(){
  */
 func SetHeartbeatDataToEtcd(key string, value string){
 
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Upload packetbeat health to etcd . Recovering, but please report this: [", r, "]")
+		}
+	}()
+
 	setOptions := &client.SetOptions{
 		TTL: time.Second * 65,
 		Dir: false,
@@ -101,7 +114,8 @@ func SetHeartbeatDataToEtcd(key string, value string){
 
 	_, err := kapi.Set(context.Background(), keyPath, value, setOptions)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println("Upload packetbeat health throw exception : [", err, "]")
+		//log.Fatal(err)
 	} else {
 		// print common key info
 		//log.Printf("Set is done. Metadata is %q\n", resp)
